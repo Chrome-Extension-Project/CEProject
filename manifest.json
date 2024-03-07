@@ -1,10 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Weather Report",
+  "name": "Weather Forcast",
   "description": "Base Level Extension",
   "version": "0.1",
-    "default_popup": "html",
-    "default_icon": "png"
+  "action": {
+    "default_popup": "index.html",
+    "default_icon": "icon.jpeg"
   },
   "web_accessible_resources": [
     {
