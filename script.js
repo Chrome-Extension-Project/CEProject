@@ -166,6 +166,8 @@ function addCityButton(buttonArea, city, cityKeys, weatherData) {
   const cityButton = document.createElement("button");
   cityButton.textContent = `${city}`;
   cityButton.addEventListener("click", function () {
+    clearData(topContainer);
+    clearData(bottomContainer);
     crruentWeatherData(cityKeys[city].lat, cityKeys[city].lng, weatherData);
     dailyWeatherData(cityKeys[city].lat, cityKeys[city].lng, weatherData);
   });
