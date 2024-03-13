@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forcast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="change-city-container" class="hidden">
+    <div class="change-city-title">Change City</div>
+    <input type="text" id="change-city-search" />
+    <div id="change-city-button-container">
+      <button class="change-city-button" lan='123' lat='456'>Hong Kong </button>
+      <button class="change-city-button" lan='111' lat='222'>Tokyo</button>
+    </div>
+  </div>
+  <div class="setting-container">
+    <div class="setting-title">Setting</div>
+    <div class="setting-degree">Unit:
+      <button class='setting-degree-celsius'>Celsius</button>
+      <button class="setting-degree-fahrenheit">Fahrenheit</button>
+      <div class='setting-layout'>
+        <div class="setting-layout-title">Layout</div>
+        <div class='setting-layout-container'>
+        <div class="setting-layout-graphical">
+          <img class='setting-layout-graphical-pic' src='' />
+          <div class="setting-layout-graphical-text">Graphical</div>
+        </div>
+        <div class='setting-layout-descriptive'>
+          <img class='setting-layout-descriptive-pic' src=""></img>
+          <div class='setting-layout-descriptive-text'>Descriptive</div>
+        </div>
+        </div>
+        <button class='setting-ok'>OK</button>
+      </div>
+    </div>
+    <div>
+    </div>
+  </div>
+
+    <div class="top-container">
+      <div class="left-right-button-container">
+        <button class="left-button"> ← </button>
+        <button class="right-button"> → </button>
+      </div>
+      <a class='change-city-link'>Change City</a>
+      <div class="sun-cloud-container">
+        <div class="weather-degree-container">23C</div>
+        <div class="cloud">CloudPhoto</div>
+      </div>
+      <div class="date">23/4</div>
+    </div>
+
+    <div class="bottom-container">
+      <div class="cur-temp">current temperture</div>
+      <div class="cur-rh">Relative Humidity</div>
+      <div class="cur-appa-temp">current Apparent Temperature</div>
+      <div class="cur-prec-prob">precipitation probability</div>
+      <div class="cur-rain">rain(if aviliable)</div>
+      <div class="cur-showers">showers(if aviliable)</div>
+    </div>
+
+  <div class="footer-container">
+    <button class='setting-button'>setting</button>
+    <button class='details-button'>Details</button>
+  </div>
+    <!-- script -->
+    <script src="script.js" defer></script>
+</body>
+
+</html>

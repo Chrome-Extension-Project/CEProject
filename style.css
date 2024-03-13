@@ -1,0 +1,22 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  width: 350px;
+  height: 550px;
+}
+
+.weather-sunshine {}
+
+.weather-cold {}
+
+.weather-rain {}
+
+.weather-snow {}
+
+.weather-thunder {}
+
+.weather-fog {}
+
