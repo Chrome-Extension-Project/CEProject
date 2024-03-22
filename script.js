@@ -674,6 +674,10 @@ easterBtn.addEventListener("click", function () {
       .classList.remove("easter-unit");
     document.querySelector(".setting-layout-ok").classList.remove("easter-Ok");
     document.querySelector(".setting-layout-ok").textContent = "OK";
+    document.querySelector(".setting-layout-choice-graphical-pic").src =
+      "./graphical.png";
+    document.querySelector(".setting-layout-choice-descriptive-pic").src =
+      "./descriptive.png";
   } else {
     document.querySelector(".egg").classList.remove("hidden");
     document
@@ -701,5 +705,9 @@ easterBtn.addEventListener("click", function () {
       .classList.add("easter-unit");
     document.querySelector(".setting-layout-ok").classList.add("easter-Ok");
     document.querySelector(".setting-layout-ok").textContent = "O . K .";
+    document.querySelector(".setting-layout-choice-graphical-pic").src =
+      "./graphical-easter.jpg";
+    document.querySelector(".setting-layout-choice-descriptive-pic").src =
+      "./descriptive-easter.jpg";
   }
 });
