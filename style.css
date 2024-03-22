@@ -391,7 +391,9 @@ img.sun-bg {
 .setting-layout-choice-graphical-pic,
 .setting-layout-choice-descriptive-pic {
   border-radius: 5px;
+
   height: 150px;
+
 }
 
 .setting-layout-choice-graphical-text,
