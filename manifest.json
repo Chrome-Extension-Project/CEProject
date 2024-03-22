@@ -5,18 +5,23 @@
   "version": "0.1",
   "action": {
     "default_popup": "index.html",
-    "default_icon": "icon.jpeg"
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "web_accessible_resources": [
     {
-      "resources": ["images/*"],
-      "matches": ["https://www.google.com/*"]
+      "resources": [],
+      "matches": []
     }
   ],
   "content_scripts": [
     {
-      "matches": ["https://*/", "https://*/*", "http://*/"],
-      "js": ["content.js"]
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
     }
-  ]
+  ],
+  "permissions": ["tabs", "activeTab", "storage"]
 }

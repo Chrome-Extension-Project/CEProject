@@ -1,24 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Forcast</title>
-    <link rel="stylesheet" href="style.css" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forcast</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Protest+Riot&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container sun-cloud-bg" id="container">
+    <!-- graphical start -->
+    <div class="graphical-container hidden">
+      <img class="small-cloud-1" src="./small-cloud.svg" alt="" />
+      <img class="small-cloud-2" src="./small-cloud.svg" alt="" />
+      <!-- <img class="big-cloud" src="./big-cloud.svg" alt="" /> -->
+      <img src="./Tree.svg" alt="" class="tree-1" />
+      <img src="./Tree.svg" alt="" class="tree-2" />
+      <img src="./Stone.svg" alt="" class="stone" />
+      <img src="./wind-1.svg" alt="" class="wind-1" />
+      <img src="./wind-1.svg" alt="" class="wind-2" />
+      <img src="./Mountain.svg" alt="" class="moutain" />
+      <div class="land"></div>
+    </div>
+    <!-- graphical end -->
+
+    <div id="change-city-container" class="hidden">
+      <div class="change-city-title">change city</div>
+      <img src="./close-icon.svg" alt="" class="change-city-close" />
+      <input type="text" id="change-city-search" />
+      <div id="change-city-button-container">
+        <button class="change-city-button" lan="123" lat="456">
+          type the city you want
+        </button>
+      </div>
+    </div>
+    <div class="setting-container hidden">
+      <div class="setting-title">Se<span class="easterBtn">tt</span>ing</div>
+      <img
+        src="https://www.christies.com/img/LotImages/2020/CKS/2020_CKS_18369_0230_000(a_cloisonne_enamel_silver-gilt_easter_egg_mark_of_feodor_ruckert_mosco102413).jpg?mode=max"
+        class="egg hidd" />
+      <img src="./close-icon.svg" alt="" class="setting-close" />
+
+      <div class="setting-degree">
+        Unit:
+        <button class="setting-degree-celsius">Celsius</button>
+        <button class="setting-degree-fahrenheit">Fahrenheit</button>
+      </div>
+
+      <div class="setting-win-speed">
+        Win Speed:
+        <button class="setting-speed-km">km/h</button>
+        <button class="setting-speed-mile">mph</button>
+      </div>
+
+      <div class="setting-rain-reminder">
+        Rain Reminder:
+        <button class="setting-rain-reminder-on">on</button>
+        <button class="setting-rain-reminder-off">off</button>
+      </div>
+
+      <div class="setting-layout">
+        <div class="setting-layout-title">Layout</div>
+
+        <div class="setting-layout-choice-container">
+          <div class="setting-layout-choice-graphical">
+            <img class="setting-layout-choice-graphical-pic" src="https://picsum.photos/110/150" />
+            <div class="setting-layout-choice-graphical-text">Graphical</div>
+          </div>
+
+          <div class="setting-layout-choice-descriptive">
+            <img class="setting-layout-choice-descriptive-pic" src="https://picsum.photos/110/150" />
+            <div class="setting-layout-choice-descriptive-text">
+              Descriptive
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="setting-layout-ok-container">
+        <button class="setting-layout-ok setting-close-2">OK</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <div class="top-container">
+      <div class="page hidden"></div>
+      <div class="left-right-button-container">
+        <button class="left-button button-disabled">
+          < </button>
+            <button class="right-button">></button>
+      </div>
+      <div class="city-name">city name</div>
+      <img class="sun-cloud-pic" id="weather-icon" src="./sun-cloud.svg" />
+      <a class="change-city-link">change city</a>
+      <div class="weather-degree"></div>
+      <div class="degree-max-min">
+        <div class="weather-degree-min"></div>
+        <div class="weather-degree-max"></div>
+      </div>
+      <div class="date"></div>
+    </div>
+
+    <div class="bottom-container">
+      <div class="bottom-info opacity-0">
+        <div class="rh info"></div>
+        <div class="appa-temp info"></div>
+        <div class="prec-prob info"></div>
+        <div class="rain info"></div>
+        <div class="uv-index info"></div>
+        <div class="wind-dir info"></div>
+        <div class="wind-speed info"></div>
+        <div class="showers info"></div>
+        <div class="snowfall info"></div>
+      </div>
+    </div>
+
+    <div class="footer-container">
+      <button class="setting-button"><img src="./setting-icon.svg" /></button>
+      <a href="””" target="”_blank”" class="details">
+        <button class="details-button">Details</button></a>
+    </div>
+    <!-- script -->
     <script src="script.js" defer></script>
-  </head>
-  <body>
-    <div class="left-right-button-container">
-      <div class="left-button"></div>
-      <div class="right-button"></div>
-    </div>
-    <div class="sun-cloud-containe">
-      <div class="cloud"></div>
-    </div>
-    <div class="city-container"></div>
-    <div class="weather-degree-container"></div>
-    <div class="weather-status-container"></div>
-    <div class="weather-info-container"></div>
-    <div class="bottom-containe"></div>
-  </body>
+  </div>
+</body>
+
 </html>
